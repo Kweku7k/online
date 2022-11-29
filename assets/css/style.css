@@ -216,8 +216,9 @@ h6 {
   background: #ca181e;
   padding: 8px 20px;
   margin-left: 30px;
-  border-radius: 4px;
+  border-radius: 10px;
   color: #fff;
+  font-size: 16px;
 }
 
 .navbar .getstarted:hover,
@@ -411,6 +412,22 @@ h6 {
   position: relative;
 }
 
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #hero:before {
   content: "";
   position: absolute;
@@ -441,12 +458,12 @@ h6 {
 
 #hero .btn-get-started {
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-size: 20px;
+  /* font-weight: 600; */
+  font-size: 16px;
   letter-spacing: 0.5px;
   display: inline-block;
-  padding: 18px 50px;
-  border-radius: 5px;
+  padding: 10px 50px;
+  border-radius: 16px;
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
@@ -499,12 +516,20 @@ h6 {
   color: #ca181e;
 }
 
+#hero .icon-box:hover .icon {
+  color: white;
+}
+
 #hero .icon-box:hover {
   transform: scale(1.08);
+  background-color: #ca181e;
+  color: white;
 }
 
 #hero .icon-box:hover .title a {
-  color: #ca181e;
+  color: white;
+  /* color: #ca181e; */
+
 }
 
 @media (min-width: 1024px) {
@@ -871,7 +896,7 @@ section {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: #f3f9fd;
+  background: #fdf3f3;
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
@@ -881,7 +906,7 @@ section {
   content: "";
   width: 0;
   height: 0;
-  border-top: 20px solid #f3f9fd;
+  border-top: 20px solid #fdf3f3;
   border-right: 20px solid transparent;
   border-left: 20px solid transparent;
   position: absolute;
@@ -1046,6 +1071,22 @@ section {
   background: #ca181e;
   background-size: cover;
   padding: 60px 0;
+    /* The image used */
+    background-image: url("/assets/img/cuGram/cu11.jpg");
+
+    /* Set a specific height */
+    /* min-height: 500px;  */
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-link{
+  font-size: 16px !important; 
+  color: black !important;
 }
 
 .cta h3 {
@@ -1059,7 +1100,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -1205,7 +1246,7 @@ section {
   display: inline-block;
   transition: 0.3s;
 }
-
+/* 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   color: #fff;
 }
@@ -1230,7 +1271,7 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
