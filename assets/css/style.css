@@ -869,6 +869,7 @@ section {
   text-align: center;
   font-weight: bold;
   transition: width 2s;
+  width: fit-content;
   }
 
 .pill-button-alternate{
@@ -883,6 +884,8 @@ section {
   font-weight: bold;
   transition: width 2s;
   background-color: white;  border: 1px solid #ca181e;
+  width: fit-content;
+
 }
 
 .imgContainer{
