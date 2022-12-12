@@ -1919,7 +1919,15 @@ section {
   line-height: 1;
   font-weight: 300;
 }
-
+#footer .footer-top .footer-contact img {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+}
 #footer .footer-top .footer-contact p {
   font-size: 14px;
   line-height: 24px;
