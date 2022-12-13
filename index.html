@@ -52,13 +52,14 @@
     </a>
     <nav id="navbar" class="navbar navbar-light ">
       <ul>
-        <li><a class="nav-link scrollto active" href="#ourprograms">Our Programs</a></li>
+        <!-- <li><a class="nav-link scrollto active" href="#ourprograms">Our Programs</a></li>
         <li><a class="nav-link scrollto" href="online.html">Admissions</a></li>
         <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
-        
-        <button class="pill-button" style="padding: 12px 18px; margin-left: 20px;" href="">Apply Now!
-        </button>
-        
+         -->
+    
+        <a href="https://www.central.edu.gh/">
+          <button class="pill-button" style="width: fit-content; padding: 12px 18px;">Apply Now!</button>
+        </a>
       </ul>
       
       <i class="bi bi-list mobile-nav-toggle"></i>
@@ -82,7 +83,7 @@
             <a href="tel:*887*18#">
               <button id="myBtn" class="pill-button" style="width: fit-content;">Buy Forms Now!</button>
             </a>
-            <!-- <button id="myBtn2" class="pill-button" style="width: fit-content; margin-left: 6px;"> Our Payment Methods!</button> -->
+            <button class="pill-button-alternate" style="width: fit-content; margin-left: 6px;"><a href="#program">Payment Page!</a> </button>
           </div>
         </div>
 
@@ -133,12 +134,13 @@
 
     <!-- ======= About Video Section ======= -->
     <section id="ourprograms" class="about-video">
-      <div class="container" data-aos="fade-up">
+      <div id="program" class="container" data-aos="fade-up">
         
  
 
         
         <h1>Our Programs</h1>
+        <p><b> Kindly select a program to continue</b></p>
 
           <div class="row pt-3 pt-lg-0 mt-5 content" data-aos="fade-left" data-aos-delay="100">
           <div class="col-md-6" style="margin: 15px 0;">
@@ -432,7 +434,7 @@ var modal = document.getElementById("myModal");
 var modal2 = document.getElementById("myModal2");
 
 // Get the button that opens the modal
-// var btn = document.getElementById("myBtn");
+var btn = document.getElementById("myBtn");
 // var btn2 = document.getElementById("myBtn2");
 
 // Get the <span> element that closes the modal
@@ -443,17 +445,17 @@ var span2 = document.getElementsByClassName("close2")[0];
 btn.onclick = function() {
 modal.style.display = "block";
 }
-btn2.onclick = function() {
-modal2.style.display = "block";
-}
+// btn2.onclick = function() {
+// modal2.style.display = "block";
+// }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
 modal.style.display = "none";
 }
-span2.onclick = function() {
-modal2.style.display = "none";
-}
+// span2.onclick = function() {
+// modal2.style.display = "none";
+// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
